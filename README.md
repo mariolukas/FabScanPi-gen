@@ -93,6 +93,15 @@ The following environment variables are supported:
 
     If set, then instead of working through the numeric stages in order, this list will be followed. For example setting to `stage0 stage1 mystage stage2` will run the contents of `mystage` before stage2. An absolute or relative path can be given for stages outside the pi-gen directory.
 
+ FabScan Related changes to the original pi-gen:   
+
+ * `FABSCANPI_STAGE` (Default: 'testing')
+    This can be set to define the build stage of the FabScanPi Image. Possible values are `stable` and `testing`
+    This setting defines from which apt stage the FabScanPi Server Software is installed.
+
+ * `ENABLE_SWAPPING` (Default: 1)
+    This defines if swapping is enabled or disabled.
+
 A simple example for building Raspbian:
 
 ```bash
@@ -233,6 +242,9 @@ maintenance and allows for more easy customization.
    like sonic-pi, system documentation, office productivity, etc.  This is the
    stage that installs all of the things that make Raspbian friendly to new
    users.
+
+ - **Stage FabScanPi** - Raspbian System containing all needed configurations
+   and Packages to run the FabScanPi Software.
 
  - **Stage 5** - The official Raspbian Desktop image. Right now only adds
    Mathematica.

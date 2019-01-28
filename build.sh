@@ -142,6 +142,11 @@ if [ -z "${IMG_NAME}" ]; then
 	exit 1
 fi
 
+# Begin of FabScan related changes.
+export FABSCANPI_STAGE="${FABSCANPI_STAGE:-testing}"
+export ENABLE_SWAPPING="${ENABLE_SWAPPING:-1}"
+# End of FabScan related changes.
+
 export USE_QEMU="${USE_QEMU:-0}"
 export IMG_DATE="${IMG_DATE:-"$(date +%Y-%m-%d)"}"
 export IMG_FILENAME="${IMG_FILENAME:-"${IMG_DATE}-${IMG_NAME}"}"
