@@ -1,6 +1,6 @@
-# pi-gen
+# FabScanPi-gen
 
-_Tool used to create the raspberrypi.org Raspbian images_
+_Tool used to create the fabscan.org Raspbian images. Based on raspberrypi.org Raspbian images_
 
 
 ## Dependencies
