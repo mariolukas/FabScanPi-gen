@@ -5,7 +5,7 @@ Content-Type: text/html
 
 <html>
     <head>
-        <title>OctoPrint is currently not running</title>
+        <title>FabScanPi Server is currently not running</title>
         <style>
             body {
                 margin: 0;
@@ -69,7 +69,7 @@ Content-Type: text/html
                     Verify that the process is running:
                     <code>ps -ef | grep -i fabscanpi | grep -i python</code> should show a
                     python process:
-                    <pre>pi@octopi:~ $ ps -ef | grep -i fabscanpi | grep -i python<br>
+                    <pre>pi@fabscanpi:~ $ ps -ef | grep -i fabscanpi | grep -i python<br>
 root     14674     1 77 11:19 ?        00:00:02 /usr/bin/python /usr/bin/fabscanpi-serveri <br> --config=/etc/fabscanpi/default.config.json --settings=/etc/fabscanpi/defaul
 t.settings.json <br> --logfile=/var/log/fabscanpi/fabscanpi.log</pre>
                 </li>
